@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo bảng, trộn dòng và cột</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            font-size: 12px;
+            margin: 20px;
+        }
+        
+        h2 {
+            color: #CC0033;
+            text-align: center;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        table {
+            width: 600px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border: 1px solid #000000;
+        }
+
+        th, td {
+            border: 1px solid #A0A0A0;
+            padding: 6px;
+        }
+
+        /* Dòng tiêu đề màu đỏ bầm, chữ trắng */
+        thead tr {
+            background-color: #CC0033;
+            color: #FFFFFF;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Căn chỉnh nội dung các ô */
+        .center {
+            text-align: center;
+        }
+        
+        .right {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Chương trình học - ngành lập trình</h2>
+
+    <table>
+        <thead>
+            <!-- Dòng 1: Tiêu đề cột chính -->
+            <tr>
+                <th rowspan="2" style="width: 25%;">Nhóm học phần</th>
+                <th rowspan="2" style="width: 45%;">Môn học</th>
+                <th colspan="2" style="width: 30%;">Số tiết</th>
+            </tr>
+            <!-- Dòng 2: Tiêu đề cột phụ -->
+            <tr>
+                <th>Lý thuyết</th>
+                <th>Thực hành</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Nhóm I: Tin học văn phòng (Gồm 6 môn) -->
+            <!-- Dòng 3 -->
+            <tr>
+                <td rowspan="6" class="center">I<br>Tin học văn phòng</td>
+                <td>Hệ điều hành Windows</td>
+                <td class="center">3</td>
+                <td class="center">3</td>
+            </tr>
+            <!-- Dòng 4 -->
+            <tr>
+                <td>Sử dụng Internet</td>
+                <td class="center">3</td>
+                <td class="center">3</td>
+            </tr>
+            <!-- Dòng 5 -->
+            <tr>
+                <td>Soạn thảo văn bản với MS Word</td>
+                <td class="center">24</td>
+                <td class="center">40</td>
+            </tr>
+            <!-- Dòng 6 -->
+            <tr>
+                <td>Tạo bài trình diễn với MS PowerPoint</td>
+                <td class="center">9</td>
+                <td class="center">13</td>
+            </tr>
+            <!-- Dòng 7 -->
+            <tr>
+                <td>Xử lý số liệu với MS Excel</td>
+                <td class="center">24</td>
+                <td class="center">40</td>
+            </tr>
+            <!-- Dòng 8 -->
+            <tr>
+                <td>Tạo trang Web với MS FrontPage</td>
+                <td class="center">9</td>
+                <td class="center">13</td>
+            </tr>
+
+            <!-- Nhóm II: Kỹ thuật lập trình (Gồm 2 môn) -->
+            <!-- Dòng 9 -->
+            <tr>
+                <td rowspan="2" class="center">II<br>Kỹ thuật lập trình (VEMIT)</td>
+                <td>Nhập môn lập trình</td>
+                <td class="center">36</td>
+                <td class="center">60</td>
+            </tr>
+            <!-- Dòng 10 -->
+            <tr>
+                <td>Kỹ thuật lập trình</td>
+                <td class="center">36</td>
+                <td class="center">60</td>
+            </tr>
+
+            <!-- Dòng 11: Trộn thành 1 cột theo yêu cầu -->
+            <tr>
+                <td colspan="4" style="height: 20px;"></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
