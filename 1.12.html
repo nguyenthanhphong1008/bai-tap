@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Phiếu đăng ký tham gia chương trình khuyến mãi</title>
+</head>
+<body>
+    <form name="form1" action="" method="post">
+        <h2 align="center">Phiếu đăng ký tham gia chương trình khuyến mãi</h2>
+        <table border="1" align="center" cellpadding="5" cellspacing="0">
+            <tr>
+                <td>Họ và tên:</td>
+                <td><input type="text" name="txtHoTen" size="30"></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ:</td>
+                <td><input type="text" name="txtDiaChi" size="30"></td>
+            </tr>
+            <tr>
+                <td>Điện thoại:</td>
+                <td><input type="text" name="txtDienThoai" size="20"></td>
+            </tr>
+            <tr>
+                <td>Phái:</td>
+                <td>
+                    <input type="radio" name="radPhai" value="Nam" checked> Nam 
+                    <input type="radio" name="radPhai" value="Nu"> Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>Nghề nghiệp:</td>
+                <td>
+                    <select name="selNgheNghiep" size="4">
+                        <option value="Hoc sinh">Học sinh</option>
+                        <option value="Sinh vien">Sinh viên</option>
+                        <option value="Giao vien">Giáo viên</option>
+                        <option value="Khac">Khác</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Chọn sản phẩm tham gia:</td>
+                <td>
+                    <select name="selSanPham" size="4" multiple>
+                        <option value="Tivi">Tivi</option>
+                        <option value="Tu lanh">Tủ lạnh</option>
+                        <option value="May giat">Máy giặt</option>
+                        <option value="Dieu hoa">Điều hòa</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Số người dự đoán tham gia:</td>
+                <td><input type="text" name="txtSoNguoi" size="10"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" name="btnDangKy" value="Đăng ký" onclick="hienThongBao()">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        function hienThongBao() {
+            alert("Bạn đã đăng ký thành công!");
+        }
+    </script>
+</body>
+</html>

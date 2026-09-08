@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form và các điều khiển trên form</title>
+    <style>
+        table {
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f2f7fa;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        td {
+            padding: 4px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 150px;
+        }
+        #result {
+            color: blue;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="loginForm">
+        <!-- Bảng gồm 4 dòng 2 cột -->
+        <table>
+            <!-- Dòng 1: Mã người dùng -->
+            <tr>
+                <td>Mã người dùng</td>
+                <td><input type="text" id="txtMaNguoiDung" value="phuong"></td>
+            </tr>
+            <!-- Dòng 2: Mật khẩu -->
+            <tr>
+                <td>Mật khẩu</td>
+                <td><input type="password" id="txtMatKhau" value="123456"></td>
+            </tr>
+            <!-- Dòng 3: Nút Đồng ý -->
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" id="btnDongY" value="Đồng ý" onclick="xulyDangNhap()">
+                </td>
+            </tr>
+            <!-- Dòng 4: Điều khiển nhãn để xuất nội dung -->
+            <tr>
+                <td></td>
+                <td>
+                    <div id="lblHienThi"></div>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <!-- Xử lý chức năng bằng JavaScript -->
+    <script>
+        function xulyDangNhap() {
+            // Lấy giá trị từ ô nhập Mã người dùng
+            var maNguoiDung = document.getElementById("txtMaNguoiDung").value;
+            
+            // Hiển thị giá trị đó vào thẻ div nhãn bằng innerText
+            document.getElementById("lblHienThi").innerText = maNguoiDung;
+        }
+    </script>
+
+</body>
+</html>
